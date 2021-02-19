@@ -1,0 +1,21 @@
+cabal-version: 3.0
+
+name:           hls-qq-example
+version:        0.1
+category:       Development
+maintainer:     Julien Langlois <yourstruly@julienlanglois.me>
+license:        BSD-3-Clause
+extra-source-files:
+    ChangeLog.md
+
+common deps
+  build-depends:
+    base
+  ghc-options: -Wcompat -Wall
+  default-language: Haskell2010
+
+executable example
+  import: deps
+  main-is: Main.hs
+  build-depends:
+    string-interpolate

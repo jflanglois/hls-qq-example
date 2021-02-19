@@ -1,0 +1,5 @@
+.*
+!.gitignore
+!.envrc
+/dist
+/dist-newstyle
